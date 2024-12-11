@@ -33,6 +33,12 @@ return [
     |
     */
 
+    'options'   => [
+    PDO::ATTR_PERSISTENT => true,
+    PDO::SQLSRV_ATTR_ENCRYPT => true,
+    PDO::SQLSRV_ATTR_TRUST_SERVER_CERTIFICATE => false,
+],
+
     'connections' => [
 
         'sqlite' => [
